@@ -1,0 +1,12 @@
+.panel {
+  width: 60%;
+  height: 60%;
+  padding: 20px;
+  /* background-color: #303030; */
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+}

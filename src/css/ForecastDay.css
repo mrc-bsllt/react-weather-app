@@ -1,0 +1,22 @@
+.next_forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 5);
+  height: 100%;
+  padding: 15px;
+  border-left: 1px solid #c1c1c1;
+}
+.next_forecast:last-child {
+  border-right: 1px solid #c1c1c1;
+}
+.next_forecast > h5 {
+  font-size: 22px;
+}
+.next_forecast > img {
+  height: 100px;
+}
+.next_forecast > small {
+  margin: 0 0 5px 0;
+}

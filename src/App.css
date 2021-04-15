@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.bg_darkgrey {
+  background-color: #524948;
+}
+.bg_lightgreen {
+  background-color: #68A691;
+}
+
+.bg_black {
+  background-color: #303030;
+}
+.bg_green {
+  background-color: #317378;
+}
+.bg_red {
+  background-color: #FD151B;
+}
+.bg_blue {
+  background-color: #246EB9;
+  color: #fff;
+}
+.bg_lightgrey {
+  background-color: #E6E6EA;
+}
+.bg_lightblue {
+  background-color: #2AB7CA;
+}
+.cl_grey {
+  color: #c1c1c1;
+}
+.cl_black {
+  color: #303030;
+}
+.btn_toggle {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn_toggle > .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.circle.left_to_right {
+  animation-name: leftToRight;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-duration: 0.1s;
+}
+.circle.right_to_left {
+  animation-name: rightToLeft;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-duration: 0.1s;
+}
+
+/* ANIMAZIONI */
+@keyframes leftToRight {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    top: 0;
+    left: calc(100% - 20px);
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}

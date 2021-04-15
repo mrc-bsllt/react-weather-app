@@ -1,0 +1,89 @@
+.city_container {
+  position: relative;
+  height: 100%;
+}
+h1 {
+  font-size: 80px;
+}
+.date_time {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.top {
+  display: flex;
+  height: 70%;
+}
+.top > .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+}
+.top > .right {
+  width: calc(100% - 150px);
+  height: 100%;
+  padding: 0 20px;
+}
+.right p {
+  display: inline-block;
+  margin: 5px 15px;
+  font-size: 20px;
+}
+.right p > .sun_icon {
+  margin-left: 5px;
+  font-size: 50px;
+  vertical-align: bottom;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  /* background-color: #317378; */
+  border-radius: 10px;
+}
+.icon_container > img {
+  width: 150px;
+}
+small {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.bottom {
+  display: flex;
+  height: 30%;
+}
+.temp_box {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: 0 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 17px 0px #c1c1c1;
+  -webkit-box-shadow: 5px 5px 17px 0px #c1c1c1;
+  -moz-box-shadow: 5px 5px 17px 0px #c1c1c1;
+}
+.temp_box > .temp_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+#temp_section {
+  position: relative;
+  bottom: 50px;
+  text-align: right;
+}
+#temp_section p {
+  font-size: 40px;
+}
